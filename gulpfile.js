@@ -10,12 +10,30 @@ var config = {
 //Une los css y los concatena en un app.css
 gulp.task('css', function () {
    return gulp.src([
-       config.cssPath + '/bootstrap.css',
+       config.cssPath + '/vendor/normalize.css',
+       config.cssPath + '/vendor/font-awesome/css/font-awesome.css',
        config.cssPath + '/style.css'
    ])
    .pipe(concat('app.css'))
    .pipe(gulp.dest('./app/build/css'))
 });
 
+//Concatena los archivos js propios
+gulp.task('js', function () {
+    gulp.src([
+        config.jsPath + '/vendor/*.js',
+        config.jsPath + '/**/*.js'
+    ])
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./app/build/js'));
+});
+
+//Vigila los cambios en los archivos Sass
+gulp.task('watch', function () {
+    gulp.watch( config.cssPath + '/*.css', ['css']);
+    gulp.watch( config.jsPath + '/**/*.js', ['js']);
+})
+
 //Tarea general gulp
-gulp.task('default', ['css']);
+gulp.task('default', ['css','js','watch']);

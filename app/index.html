@@ -2,141 +2,135 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño y Desarrollo Web - Diego F. Reyes</title>
     <link rel="stylesheet" href="./build/css/app.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar">
            <div class="container">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Diego F. Reyes</a>
+                <div class="navbar__header">
+                    <h1 class="navbar__brand">
+                        <a href="./">Diego <span class="font-blue">F. Reyes</span></a>
+                    </h1>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Portafolio</a></li>
-                    <li><a href="">Herramientas</a></li>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Contacto</a></li>
+                <ul class="navbar__menu">
+                    <li><a href="./">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
-           </div>
-            
+            </div>     
         </nav>
-        
+        <div class="container">
+           <h2 class="header__title">Desarrollador Web <br>Front-end y Back-end</h2>
+           <p class="header__description"><span class="font-blue">[</span> 'Hobbie'<span class="font-blue">,</span> 'Pasión'<span class="font-blue">,</span> 'Vida' <span class="font-blue">]</span></p> 
+        </div>
     </header>
-    <section class="section service">
+    <article id="sobremi" class="section about-me bg-dark-blue">
         <div class="container">
-            <h2>Conoce lo que te puedo ofrecer</h2>
-            <article class="service__box">
-                <span>Icono</span>
-                <h3 class="service__title">Desarrollo web a la medida</h3>
-                <p class="service__description">Analisis y desarrollo de aplicaciones web a la medida, buscando la satisfacción de tus necesidades primordiales.</p>
-            </article>
-            <article class="service__box">
-                <span>Icono</span>
-                <h3 class="service__title">Creatividad web con estrategía</h3>
-                <p class="service__description">Diseño web personalizado y basado en los objetivos estrategicos orientados hacia tu mercado.</p>
-            </article>
-        </div>
-    </section>
-    <section class="section skill">
-        <div class="container">
-            <h2>Técnicas y afinidades</h2>
-            <ul>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">HTML5</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">CSS3</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">WORDPRESS</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">LARAVEL</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">ANGULARJS</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">GIT</span>
-                </li>
-                <li class="skill__box">
-                     <span class="skill__icon"></span>
-                    <span class="skill__title">GULP</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="section portfolio">
-       <div class="container">
-            <h2>Productos finales</h2>
-            <figure class="portfolio__item">
-               <img src="" alt=""> 
-               <figcaption class="portfolio__info">
-                  <h3 class="portfolio__title">Gane</h3>
-                  <span class="portfolio__description">Intranet</span> 
-               </figcaption>
-            </figure>
-            <figure class="portfolio__item">
-               <img src="" alt=""> 
-               <figcaption class="portfolio__info">
-                  <h3 class="portfolio__title">Gane</h3>
-                  <span class="portfolio__description">Tablero de Resultados</span> 
-               </figcaption>
-            </figure>
-            <figure class="portfolio__item">
-               <img src="" alt=""> 
-               <figcaption class="portfolio__info">
-                  <h3 class="portfolio__title">Saint's and Sinner's</h3>
-                  <span class="portfolio__description">Sitio Web - Demo</span> 
-               </figcaption>
-            </figure>
-            <figure class="portfolio__item">
-               <img src="" alt=""> 
-               <figcaption class="portfolio__info">
-                  <h3 class="portfolio__title">Fitness Cross International</h3>
-                  <span class="portfolio__description">Sitio Web - Demo</span> 
-               </figcaption>
-            </figure>
-        </div>
-    </section>
-    <section class="section about-me">
-        <div class="container">
-            <h2>Hola! ¿Que tal?</h2>
+           <section class="section__header">
+               <h2 class="section__title">Hola!</h2>
+           </section>
             <div class="row">
                 <div class="col-sm-6">
-                    <img class="about-me__avatar" src="" alt="Una versión avatar de diferrev">
-                </div>
-                <div class="col-sm-6">
                     <p class="about-me__history">
-                        Mi nombre es Diego F. Reyes (@diferrev), soy desarrollador y diseñador web, futuro tecnológo en análisis y desarrollo de sistemas de información y un bronza en League of Legends. 
+                        Mi nombre es Diego F. Reyes.<br> Soy desarrollador web front-end y back-end, futuro tecnológo en análisis y desarrollo de sistemas de información y un bronza en ascenso en League of Legends. 
                     </p>
-                    <p>Puedes encontrarme en:</p>
-                    <ul>
-                        <li><a href="">GitHub</a></li>
-                        <li><a href="">Twitter</a></li>
+                    <ul class="social-media">
+                        <li class="social-media__link">
+                            <a title="Diego F. Reyes en Github" href="https://github.com/diferrev" target="_blank">
+                                <i class="fa fa-github" ></i>
+                            </a>
+                        </li>
+                        <li class="social-media__link">
+                            <a title="Diego F. Reyes en Twitter" href="https://twitter.com/diferrev" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section contact">
+    </article>
+    <article id="habilidades" class="section skill bg-verydark-blue">
         <div class="container">
-            <h2>Contáctame</h2>
+           <header class="section__header">
+               <h2 class="section__title">Técnicas y afinidades</h2>
+           </header>
+            <ul class="skill__list">
+                <li class="skill__box">
+                    <span class="skill__icon">
+                        <div class="circle" id="circles-html"></div>
+                    </span>
+                    <span class="skill__title">HTML5</span>
+                </li>
+                <li class="skill__box">
+                     <span class="skill__icon">
+                         <div class="circle" id="circles-css"></div>
+                     </span>
+                    <span class="skill__title">CSS3</span>
+                </li>
+                <li class="skill__box">
+                     <span class="skill__icon">
+                         <div class="circle" id="circles-wordpress"></div>
+                     </span>
+                    <span class="skill__title">WORDPRESS</span>
+                </li>
+                <li class="skill__box">
+                     <span class="skill__icon">
+                         <div class="circle" id="circles-git"></div>
+                     </span>
+                    <span class="skill__title">GIT</span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article id="portafolio" class="section portfolio">
+       <div class="container">
+          <header class="section__header">
+               <h2 class="section__title">Portafolio</h2>
+               <span class="section__description">Algunos de mis productos finales y demos en progreso</span>
+           </header>
+            <div class="portfolio__item">
+               <img src="http://placehold.it/350x350"> 
+               <div class="portfolio__item__info">
+                  <h3 class="portfolio__item__title">Gane Centro</h3>
+                  <span class="portfolio__item__description">Intranet</span> 
+               </div>
+            </div>
+             <div class="portfolio__item">
+               <img src="http://placehold.it/350x350"> 
+               <div class="portfolio__item__info">
+                  <h3 class="portfolio__item__title">Gane Centro</h3>
+                  <span class="portfolio__item__description">Tablero de resultados rotativo</span> 
+               </div>
+            </div>
+             <div class="portfolio__item">
+               <img src="http://placehold.it/350x350"> 
+               <div class="portfolio__item__info">
+                  <h3 class="portfolio__item__title">Fitness Cross International</h3>
+                  <span class="portfolio__item__description">Sitio Web - Demo</span> 
+               </div>
+            </div>
+            <div class="portfolio__item">
+               <img src="http://placehold.it/350x350"> 
+               <div class="portfolio__item__info">
+                  <h3 class="portfolio__item__title">Saint's and Sinner's</h3>
+                  <span class="portfolio__item__description">Sitio Web - Demo</span> 
+               </div>
+            </div>
+        </div>
+    </article>
+    <article id="contacto" class="section contact bg-dark-blue">
+        <div class="container">
+            <header class="section__header">
+                <h2 class="section__title">Contáctame</h2>
+            </header>
             <form action="" class="contact__form">
                 <p><input type="text" placeholder="Tu nombre"></p>
                 <p><input type="text" placeholder="Tu correo electrónico"></p>
@@ -144,11 +138,13 @@
                 <p><input type="button" value="Enviar mensaje"></p>
             </form>
         </div>
-    </section>
-    <footer class="section credits">
+    </article>
+    <footer class="section credits bg-verydark-blue">
         <div class="container">
             <p>Hecho con amor, muchas horas nocturnas y miles de tazas de café</p>
         </div>
     </footer>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <script src="build/js/app.js" type="text/javascript"></script>
 </body>
 </html>

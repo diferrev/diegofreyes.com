@@ -1,1 +1,170 @@
-body { padding-top: 70px; }
+/* ### Grid System ### */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ### General Styles ### */
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+.font-blue{
+    color: rgb(15, 187, 255);
+}
+.bg-dark-blue{
+    background-color: rgb(21, 32, 72);
+    color: rgb(250, 250, 250);
+}
+.bg-verydark-blue{
+    background-color: rgb(7, 10, 22);
+    color: rgb(250, 250, 250);
+}
+
+/* #### Header ### */
+.header{
+    background-color: rgb(7, 10, 22);
+    background-image: url('../images/header_bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 400px;
+    color: rgb(255, 255, 255);
+}
+.header__title, .header__description{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.header__title{
+    color: rgb(255, 255, 255);
+    margin-top: 110px;
+    text-shadow: 0px 0px 7px rgb(21, 32, 72);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.header__description{
+}
+
+/* ### Navbar ### */
+.navbar{
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+}
+.navbar__header{
+    text-align: center;
+    height: 70px;
+}
+.navbar__menu{
+    display: none;
+}
+
+.navbar__brand{
+    margin:0;
+    
+}
+.navbar__brand a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 70px;
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* ### Section Global Styles ### */
+
+.section{
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.section__header{
+    margin-bottom: 2rem;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+}
+
+.section__title{
+    font-weight: 700;
+    margin: 0 0 10px 0; 
+    font-size: 1.7rem;
+}
+.section__description{
+    font-size: 1.2rem;
+    color: rgb(100,100,100);
+    display: inline-block;
+}
+
+
+/* ### About Me ### */
+.about-me{
+    text-align: center;
+}
+
+.about-me__history{
+    line-height: 1.4;
+    color: rgb(242, 241, 239);
+    font-size: 1.2rem;
+}
+
+/* ### Social Media Links ### */
+
+.social-media{
+    list-style: none;
+    padding: 0;
+}
+.social-media__link{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+.social-media__link a{
+    margin: 0 5px;
+    color: rgb(15, 187, 255);
+}
+
+/* ### Skill Styles ### */
+
+.skill__list{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.skill__box{
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.skill__title{
+    font-size: .7rem;
+}
+
+/* ### Portfolio Styles ### */
+.portfolio__item{
+    margin: 0 0 20px;
+    position: relative; 
+    height: 381px;
+}
+.portfolio__item img{
+    width: 100%;
+}
+.portfolio__item__info{
+    position: absolute;
+    background-color: rgba(21, 32, 72, 1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(242, 241, 239);
+    padding: 10px 15px;
+}
+.portfolio__item__title{
+    margin:0;
+    line-height: 1;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.portfolio__item__description{
+    
+}
