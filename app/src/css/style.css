@@ -10,6 +10,7 @@
 /* ### General Styles ### */
 body{
     font-family: 'Exo 2', sans-serif;
+    background-color: rgb(250, 250, 250);
 }
 .font-blue{
     color: rgb(15, 187, 255);
@@ -94,7 +95,6 @@ body{
 }
 .section__description{
     font-size: 1.2rem;
-    color: rgb(100,100,100);
     display: inline-block;
 }
 
@@ -115,14 +115,21 @@ body{
 .social-media{
     list-style: none;
     padding: 0;
+    
 }
 .social-media__link{
     display: inline-block;
+    font-size: 1.5rem;
+}
+
+.social-media--about-me .social-media__link{
     font-size: 2.5rem;
 }
+
 .social-media__link a{
     margin: 0 5px;
     color: rgb(15, 187, 255);
+    text-decoration: none;
 }
 
 /* ### Skill Styles ### */
@@ -142,29 +149,69 @@ body{
 }
 
 /* ### Portfolio Styles ### */
-.portfolio__item{
-    margin: 0 0 20px;
-    position: relative; 
-    height: 381px;
+.portfolio__list{
+    padding: 0;
+    list-style: none;
 }
-.portfolio__item img{
+
+.portfolio__item{
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(163,161,163,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(163,161,163,1);
+    box-shadow: 0px 0px 16px 0px rgba(163,161,163,1);
+    margin-bottom: 30px;
+}
+.portfolio__item__thumb{
     width: 100%;
 }
-.portfolio__item__info{
-    position: absolute;
-    background-color: rgba(21, 32, 72, 1);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: rgb(242, 241, 239);
-    padding: 10px 15px;
+.portfolio__item__client{
+    margin: 0;
+    padding: 10px 15px 3px;
 }
 .portfolio__item__title{
-    margin:0;
-    line-height: 1;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 0 15px 12px;
 }
-.portfolio__item__description{
-    
+
+/* ### Contact Form Style ### */
+
+.contact__input{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(15, 187, 255);
+    width: 100%;
+    padding: 10px 15px;
+    color: rgb(250, 250, 250);
+    font-size: 1.2rem;
+}
+
+.contact__input:focus{
+    outline-width: 0;
+    background-color: rgba(7, 10, 22,.5);
+}
+
+.contact__btn{
+    background-color: rgb(15, 187, 255);
+    color: rgb(250, 250, 250);
+    width: 200px;
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.contact__btn:focus{
+    outline-width: 0;
+    background-color: rgb(6, 65, 100);
+}
+
+/* ### Footer Styles ### */
+.footer{
+    overflow: hidden;
+    text-align: center;
+}
+
+.credit__quote{
+    color: rgb(189, 195, 199); 
 }

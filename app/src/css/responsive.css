@@ -1,0 +1,7 @@
+@media only screen and (min-width :400px) {
+    .portfolio__list, .contact__form{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

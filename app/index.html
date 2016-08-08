@@ -33,23 +33,23 @@
     </header>
     <article id="sobremi" class="section about-me bg-dark-blue">
         <div class="container">
-           <section class="section__header">
+           <header class="section__header">
                <h2 class="section__title">Hola!</h2>
-           </section>
+           </header>
             <div class="row">
                 <div class="col-sm-6">
                     <p class="about-me__history">
                         Mi nombre es Diego F. Reyes.<br> Soy desarrollador web front-end y back-end, futuro tecnológo en análisis y desarrollo de sistemas de información y un bronza en ascenso en League of Legends. 
                     </p>
-                    <ul class="social-media">
+                    <ul class="social-media social-media--about-me">
                         <li class="social-media__link">
                             <a title="Diego F. Reyes en Github" href="https://github.com/diferrev" target="_blank">
-                                <i class="fa fa-github" ></i>
+                                <i class="icon icon-github" ></i>
                             </a>
                         </li>
                         <li class="social-media__link">
                             <a title="Diego F. Reyes en Twitter" href="https://twitter.com/diferrev" target="_blank">
-                                <i class="fa fa-twitter"></i>
+                                <i class="icon icon-twitter"></i>
                             </a>
                         </li>
                     </ul>
@@ -83,6 +83,18 @@
                 </li>
                 <li class="skill__box">
                      <span class="skill__icon">
+                         <div class="circle" id="circles-angularjs"></div>
+                     </span>
+                    <span class="skill__title">ANGULARJS 1.5</span>
+                </li>
+                <li class="skill__box">
+                     <span class="skill__icon">
+                         <div class="circle" id="circles-laravel"></div>
+                     </span>
+                    <span class="skill__title">LARAVEL 5</span>
+                </li>
+                <li class="skill__box">
+                     <span class="skill__icon">
                          <div class="circle" id="circles-git"></div>
                      </span>
                     <span class="skill__title">GIT</span>
@@ -94,54 +106,63 @@
        <div class="container">
           <header class="section__header">
                <h2 class="section__title">Portafolio</h2>
-               <span class="section__description">Algunos de mis productos finales y demos en progreso</span>
+               <span class="section__description">Mis productos finales y demos en progreso</span>
            </header>
-            <div class="portfolio__item">
-               <img src="http://placehold.it/350x350"> 
-               <div class="portfolio__item__info">
-                  <h3 class="portfolio__item__title">Gane Centro</h3>
-                  <span class="portfolio__item__description">Intranet</span> 
-               </div>
-            </div>
-             <div class="portfolio__item">
-               <img src="http://placehold.it/350x350"> 
-               <div class="portfolio__item__info">
-                  <h3 class="portfolio__item__title">Gane Centro</h3>
-                  <span class="portfolio__item__description">Tablero de resultados rotativo</span> 
-               </div>
-            </div>
-             <div class="portfolio__item">
-               <img src="http://placehold.it/350x350"> 
-               <div class="portfolio__item__info">
-                  <h3 class="portfolio__item__title">Fitness Cross International</h3>
-                  <span class="portfolio__item__description">Sitio Web - Demo</span> 
-               </div>
-            </div>
-            <div class="portfolio__item">
-               <img src="http://placehold.it/350x350"> 
-               <div class="portfolio__item__info">
-                  <h3 class="portfolio__item__title">Saint's and Sinner's</h3>
-                  <span class="portfolio__item__description">Sitio Web - Demo</span> 
-               </div>
-            </div>
+           <ul class="portfolio__list">
+               <li class="portfolio__item">
+                   <img class="portfolio__item__thumb" src="./build/images/portfolio-one.jpg"/>
+                   <h3 class="portfolio__item__client">Gane Centro</h3>
+                   <p class="portfolio__item__title">Portal Interno</p>
+               </li>
+               <li class="portfolio__item">
+                   <img class="portfolio__item__thumb" src="./build/images/portfolio-two.jpg"/>
+                   <h3 class="portfolio__item__client">Gane Centro</h3>
+                   <p class="portfolio__item__title">Tablero de resultados</p>
+               </li>
+               <li class="portfolio__item">
+                   <img class="portfolio__item__thumb" src="./build/images/portfolio-three.jpg"/>
+                   <h3 class="portfolio__item__client">Fitness Cross International</h3>
+                   <p class="portfolio__item__title">Sitio Web</p>
+               </li>
+               <li class="portfolio__item">
+                   <img class="portfolio__item__thumb" src="./build/images/portfolio-four.jpg"/>
+                   <h3 class="portfolio__item__client">Saint's and Sinner's</h3>
+                   <p class="portfolio__item__title">Sitio Web - Demo</p>
+               </li>
+           </ul>
         </div>
     </article>
     <article id="contacto" class="section contact bg-dark-blue">
         <div class="container">
             <header class="section__header">
                 <h2 class="section__title">Contáctame</h2>
+                <span class="section__description">Trabajemos juntos!</span>
             </header>
             <form action="" class="contact__form">
-                <p><input type="text" placeholder="Tu nombre"></p>
-                <p><input type="text" placeholder="Tu correo electrónico"></p>
-                <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
-                <p><input type="button" value="Enviar mensaje"></p>
+                <p><input type="text" class="contact__input" placeholder="Tu nombre"></p>
+                <p><input type="text" class="contact__input" placeholder="Tu correo electrónico"></p>
+                <p><textarea name="" id="" cols="30" rows="10" class="contact__input" placeholder="Tu mensaje"></textarea></p>
+                <button class="contact__btn" type="button">
+                     Enviar mensaje
+                </button>
             </form>
         </div>
     </article>
-    <footer class="section credits bg-verydark-blue">
+    <footer class="footer credit bg-verydark-blue">
         <div class="container">
-            <p>Hecho con amor, muchas horas nocturnas y miles de tazas de café</p>
+            <p class="credit__quote">Hecho con amor, muchas horas nocturnas  y cientos de tazas de café</p>
+            <ul class="social-media">
+                <li class="social-media__link">
+                    <a title="Diego F. Reyes en Github" href="https://github.com/diferrev" target="_blank">
+                        <i class="icon icon-github" ></i>
+                    </a>
+                </li>
+                <li class="social-media__link">
+                    <a title="Diego F. Reyes en Twitter" href="https://twitter.com/diferrev" target="_blank">
+                        <i class="icon icon-twitter"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->

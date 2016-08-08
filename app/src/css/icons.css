@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'diegofreyes-icons';
+  src:  url('../fonts/diegofreyes-icons.eot?y6erul');
+  src:  url('../fonts/diegofreyes-icons.eot?y6erul#iefix') format('embedded-opentype'),
+    url('../fonts/diegofreyes-icons.ttf?y6erul') format('truetype'),
+    url('../fonts/diegofreyes-icons.woff?y6erul') format('woff'),
+    url('../fonts/diegofreyes-icons.svg?y6erul#diegofreyes-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'diegofreyes-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angularjs:before {
+  content: "\e900";
+}
+.icon-css3:before {
+  content: "\e901";
+}
+.icon-git:before {
+  content: "\e908";
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-html5:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-laravel:before {
+  content: "\e905";
+}
+.icon-twitter:before {
+  content: "\e906";
+}
+.icon-wordpress:before {
+  content: "\e907";
+}
+

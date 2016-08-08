@@ -11,8 +11,9 @@ var config = {
 gulp.task('css', function () {
    return gulp.src([
        config.cssPath + '/vendor/normalize.css',
-       config.cssPath + '/vendor/font-awesome/css/font-awesome.css',
-       config.cssPath + '/style.css'
+       config.cssPath + '/icons.css',
+       config.cssPath + '/style.css',
+       config.cssPath + '/responsive.css'
    ])
    .pipe(concat('app.css'))
    .pipe(gulp.dest('./app/build/css'))
