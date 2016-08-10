@@ -1,7 +1,8 @@
 function createCircleSkills(){
+    var radius = 60;
     var html = Circles.create({
       id:                  'circles-html',
-      radius:              40,
+      radius:              radius,
       value:               80,
       text:                '<span class="icon icon-html5"></span>',
       colors:              ['#ec866a', '#e34f26'],
@@ -13,9 +14,8 @@ function createCircleSkills(){
     });
     var css = Circles.create({
       id:                  'circles-css',
-      radius:              40,
+      radius:              radius,
       value:               60,
-      width:               10,
       text:                '<span class="icon icon-css3"></span>',
       colors:              ['#74b6eb', '#1B73BA'],
       duration:            1400,
@@ -26,9 +26,8 @@ function createCircleSkills(){
     });
     var wordpress = Circles.create({
       id:                  'circles-wordpress',
-      radius:              40,
+      radius:              radius,
       value:               60,
-      width:               10,
       text:                '<span class="icon icon-wordpress"></span>',
       colors:              ['#77c1e2', '#21759b'],
       duration:            1400,
@@ -39,9 +38,8 @@ function createCircleSkills(){
     });
      var angularjs = Circles.create({
       id:                  'circles-angularjs',
-      radius:              40,
+      radius:              radius,
       value:               40,
-      width:               10,
       text:                '<span class="icon icon-angularjs"></span>',
       colors:              ['#de7b7d', '#b52e31'],
       duration:            1400,
@@ -52,9 +50,8 @@ function createCircleSkills(){
     });
     var laravel = Circles.create({
       id:                  'circles-laravel',
-      radius:              40,
+      radius:              radius,
       value:               50,
-      width:               10,
       text:                '<span class="icon icon-laravel"></span>',
       colors:              ['#f8867f', '#f55247'],
       duration:            1400,
@@ -65,9 +62,8 @@ function createCircleSkills(){
     });
     var git = Circles.create({
       id:                  'circles-git',
-      radius:              40,
+      radius:              radius,
       value:               60,
-      width:               10,
       text:                '<span class="icon icon-git"></span>',
       colors:              ['#f87b5f', '#f54d27'],
       duration:            1400,
